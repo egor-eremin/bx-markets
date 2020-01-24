@@ -1,0 +1,419 @@
+.about-header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #060827 0%, rgba(23, 32, 49, 0.57) 100%);
+    position: absolute;
+  }
+  picture {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      font-family: 'object-fit: cover; object-position: center';
+    }
+  }
+}
+.about-header-text {
+  position: relative;
+  z-index: 2;
+  max-width: 1230px;
+  margin-top: 76px;
+  padding-left: 207px;
+}
+.slider-text-wrapper_about {
+  max-width: 816px;
+  min-height: 0;
+}
+.main-h1_about {
+  font-size: 37px;
+  line-height: 40px;
+  margin-bottom: 26px;
+  max-width: 546px;
+}
+.main-slider-text_about {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 65px;
+}
+.about-header-indicators {
+  max-width: 1230px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  padding-left: 207px;
+}
+.about-header-indicators-title {
+  font-size: 30px;
+  line-height: 40px;
+  color: $color-orange;
+  font-weight: 700;
+  margin-bottom: 13px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.about-header-indicators-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-white;
+}
+.about-header-indicators__item {
+  margin-right: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-header-indicators__item:last-child {
+  margin-right: 0;
+}
+.main-h2_every-day {
+  line-height: 42px;
+  color: #181818;
+  margin-bottom: 38px;
+}
+.every-day-wrapper {
+  padding-top: 117px;
+  padding-bottom: 111px;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 715px;
+    height: 715px;
+    background: url(../images/advantages-decor-top.png) no-repeat ;
+    z-index: -1;
+  }
+}
+.template-wrapper-every-day {
+  max-width: 934px;
+}
+.title-prev-text_every-day {
+  max-width: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 57px;
+}
+.btn_open-account {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 53px;
+  padding-left: 53px;
+}
+.section-wrapper_goals {
+  background-image: url("../images/goals-background_1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 122px;
+  padding-bottom: 117px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 43, 95, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+.template-wrapper_goals {
+  position: relative;
+  z-index: 2;
+  max-width: 1132px;
+  padding-left: 39px;
+}
+.main-h2_goals {
+  text-align: left;
+  color: $color-orange;
+  line-height: 42px;
+  margin-bottom: 76px;
+  font-size: 45px;
+}
+.goals-icons {
+  margin-bottom: 27px;
+}
+.goals-ttile {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  color: $color-white;
+  margin-bottom: 30px;
+}
+.goals-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.72);
+}
+.goals-columns {
+  display: flex;
+  align-items: flex-start;
+}
+.goals-col.left {
+  max-width: 440px;
+  margin-right: 153px;
+}
+.goals-col.right {
+  max-width: 493px;
+  margin-top: -8px;
+}
+.section-trading-opportunities {
+  padding-top: 158px;
+  padding-bottom: 149px;
+  position: relative;
+  overflow: hidden;
+  background: #E9EEF3;
+  min-height: 768px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 715px;
+    height: 715px;
+    background: url(../images/advantages-decor-top.png) no-repeat ;
+    z-index: 1;
+  }
+  &.animate .trading-opportunities-img {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.template-wrapper_trading-opportunities {
+  max-width: 1040px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 3;
+}
+.main-h2_trading-opportunities {
+  text-align: left;
+  max-width: 476px;
+  font-size: 45px;
+  line-height: 50px;
+  color: #052B56;
+  margin-bottom: 32px;
+}
+.p-trading-opportunities {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9D9D9D;
+  max-width: 500px;
+  margin-bottom: 66px;
+}
+.btn_trading-opportunities {
+  padding-left: 66px;
+  padding-right: 66px;
+}
+.trading-opportunities_col.right {
+  position: relative;
+  flex-grow: 1;
+}
+.trading-opportunities-img {
+  position: absolute;
+  right: -28px;
+  top: -108px;
+  width: 496px;
+  height: 668px;
+  transition: .5s .6s ease;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.section-wrapper_history {
+  padding-top: 121px;
+  padding-bottom: 137px;
+}
+.template-wrapper_history {
+  max-width: 1070px;
+}
+.main-h2_history {
+  text-align: left;
+  font-size: 45px;
+  line-height: 60px;
+  color: #282828;
+  margin-bottom: 79px;
+}
+.tab-switch_history {
+  margin-bottom: 72px;
+  a {
+    font-size: 24px;
+    line-height: 29px;
+    color: #B9B9B9;
+    font-weight: 500;
+    border-color: #E4E4E4;
+    padding-bottom: 22px;
+  }
+}
+.history-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.history-img {
+  flex-shrink: 0;
+}
+.history-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: $color-orange;
+  margin-bottom: 30px;
+}
+.history-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9D9D9D;
+}
+.history-text-wrapper {
+  padding-left: 88px;
+}
+.history-img_orange {
+  background: radial-gradient(50% 50% at 50% 50%, #FFA800 0%, #FF5C00 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history-img {
+  width: 441px;
+  height: 321px;
+  picture {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+      font-family: 'object-fit: cover; object-position: center';
+    }
+  }
+}
+.circle-icon {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-wrapper_platform-advantages {
+  padding-top: 158px;
+  padding-bottom: 125px;
+  position: relative;
+  background: #E9EEF3;
+  min-height: 970px;
+  overflow: hidden;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 715px;
+    height: 715px;
+    background: url(../images/advantages-decor-top.png) no-repeat ;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+.template-wrapper_platform-advantages {
+  max-width: 1070px;
+}
+.main-h2_platform-advantages {
+  text-align: left;
+  color: #FF5C01;
+  font-size: 28px;
+  line-height: 32px;
+  max-width: 545px;
+  margin-bottom: 30px;
+}
+.ipad-img {
+  position: absolute;
+  right: 0;
+  top: 155px;
+  transition: .5s .6s ease;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.title-prev-text_platform-advantages {
+  text-align: left;
+  max-width: 567px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #9D9D9D;
+  margin-bottom: 57px;
+}
+.platform-advantages-title {
+  color: #052B56;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  max-width: 505px;
+}
+.platform-advantages-list li {
+  padding-left: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #535353;
+  position: relative;
+  &::before {
+    content: '';
+    border: 3px solid transparent;
+    border-left: 6px solid #535353;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+}
+.platform-advantages-list {
+  max-width: 505px;
+  margin-bottom: 57px;
+}
+.btn_open-demo-account {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.section-wrapper_platform-advantages.animate .ipad-img {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+@media (min-resolution: 1.5dppx) {
+  .section-wrapper_goals {
+    background-image: url("../images/goals-background_2x.jpg");
+  }
+}

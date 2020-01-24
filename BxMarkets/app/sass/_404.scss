@@ -1,0 +1,173 @@
+.main-header_404 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-404 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #060827 0%, rgba(23, 32, 49, 0.57) 100%);
+  }
+  picture {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+      font-family: 'object-fit: cover; object-position: center';
+    }
+  }
+}
+.content-404 {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-404 {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prev-title-404 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 40px;
+  color: $color-white;
+  margin-top: 46px;
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+.text-orange {
+  color: $color-orange;
+}
+.title-404 {
+  width: 322px;
+  height: 121px;
+  background-image: url("../images/404-png.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-nav-wrapper_404 {
+  display: none;
+  &.show {
+    display: flex;
+  }
+}
+.page-404 {
+  .select-language_mobile {
+    display: none;
+  }
+  .enter-account_mobile {
+    display: none;
+  }
+  .mobile-nav-list {
+    display: none;
+  }
+}
+.main-nav-wrapper_404 {
+  &.en.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.en {
+      display: block;
+    }
+    .enter-account_mobile.en {
+      display: inline-flex;
+    }
+    .mobile-nav-list.en {
+      display: block;
+    }
+  }
+  &.ru.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.ru {
+      display: block;
+    }
+    .enter-account_mobile.ru {
+      display: inline-flex;
+    }
+    .mobile-nav-list.ru {
+      display: block;
+    }
+  }
+  &.es.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.es {
+      display: block;
+    }
+    .enter-account_mobile.es {
+      display: inline-flex;
+    }
+    .mobile-nav-list.es {
+      display: block;
+    }
+  }
+  &.de.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.de {
+      display: block;
+    }
+    .enter-account_mobile.de {
+      display: inline-flex;
+    }
+    .mobile-nav-list.de {
+      display: block;
+    }
+  }
+  &.fr.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.fr {
+      display: block;
+    }
+    .enter-account_mobile.fr {
+      display: inline-flex;
+    }
+    .mobile-nav-list.fr {
+      display: block;
+    }
+  }
+  &.it.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.it {
+      display: block;
+    }
+    .enter-account_mobile.it {
+      display: inline-flex;
+    }
+    .mobile-nav-list.it {
+      display: block;
+    }
+  }
+  &.zh.show ~ .mobile-menu-wrapper {
+    .select-language_mobile.zh {
+      display: block;
+    }
+    .enter-account_mobile.zh {
+      display: inline-flex;
+    }
+    .mobile-nav-list.zh {
+      display: block;
+    }
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .title-404 {
+    background-image: url("../images/404-png_2x.png");
+  }
+}

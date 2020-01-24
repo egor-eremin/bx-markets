@@ -1,0 +1,70 @@
+.trade-wrapper {
+  max-width: 1188px;
+}
+.with-prev {
+  margin-bottom: 19px;
+}
+.title-prev-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #969696;
+  max-width: 508px;
+  margin: 0 auto 99px;
+}
+.trade-list {
+  display: flex;
+}
+.trade-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 124px) / 3);
+  margin-right: 62px;
+}
+.trade-list-item:last-child {
+  margin-right: 0;
+}
+.trade-icon {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FFA308 0%, #FF5608 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+.trade-title {
+  text-align: center;
+  color: #1C1C1C;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.trade-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #b5b5b5;
+  width: 100%;
+}
+.section-trade {
+  position: relative;
+  padding-top: 98px;
+  padding-bottom: 112px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 715px;
+    height: 715px;
+    background: url(../images/advantages-decor-top.png) no-repeat ;
+    z-index: -1;
+  }
+}
